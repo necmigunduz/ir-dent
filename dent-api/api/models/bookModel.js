@@ -1,6 +1,6 @@
 'use strict'
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+import { Schema as _Schema, model } from 'mongoose';
+const Schema = _Schema;
 
 const BookSchema = new Schema({
     name: {
@@ -24,4 +24,4 @@ const BookSchema = new Schema({
     }
 })
 
-module.exports = mongoose.model('Books', BookSchema);
+export default model('Books', BookSchema);
