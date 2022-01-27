@@ -1,8 +1,8 @@
 {
   "name": "dent-api",
   "version": "1.0.0",
-  "description": "A library api",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "PORT=5000 nodemon server.js"
