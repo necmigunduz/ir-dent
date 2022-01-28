@@ -26,5 +26,5 @@ const BookSchema = new Schema({
       required: [true, 'Enter book price'],
       default: 0
   }
-});
+}, { timestamps: true });
 module.exports = mongoose.model('Books', BookSchema);
