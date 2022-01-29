@@ -1,19 +1,27 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { bookCategories } from './categoryFilter';
+import { createBook } from '../_actions/books';
+import { useDispatch } from 'react-redux';
+
 
 function Form(props) {
     const { filter, changeFilter } = props;
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit,reset } = useForm();
     const select = bookCategories.map((bookCategory) => 
         <option key={bookCategory}>{bookCategory}</option>
     );
+    const dispatch = useDispatch();
 
     const handleFilterChange = (e) => {
         changeFilter(e.target.value)
     };
 
-    const onSubmit = data => console.log(data) 
+    const onSubmit = (data) => {
+        console.log(data);
+        dispatch(createBook(data));
+        reset();
+    }
     return (
         <>
             <form  onSubmit={handleSubmit(onSubmit)}>

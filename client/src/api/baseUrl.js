@@ -1,3 +1,3 @@
-const baseUrl = 'http://localhost:5000/questions'
+const baseUrl = 'http://localhost:5000/books'
 
 export default baseUrl;
