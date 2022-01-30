@@ -1,4 +1,4 @@
-const bookReducer = (books = [], action) => {
+export default (books = [], action) => {
     switch(action.type){
         case 'POST':
             return [...books, action.payload];
@@ -12,5 +12,3 @@ const bookReducer = (books = [], action) => {
             return books;
     }
 }
-
-export default bookReducer;

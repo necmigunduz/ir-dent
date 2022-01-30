@@ -4,7 +4,6 @@ import { bookCategories } from './categoryFilter';
 import { createBook } from '../_actions/books';
 import { useDispatch } from 'react-redux';
 
-
 function Form(props) {
     const { filter, changeFilter } = props;
     const { register, handleSubmit,reset } = useForm();

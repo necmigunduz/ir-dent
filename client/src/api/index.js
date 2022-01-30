@@ -1,14 +1,13 @@
 import axios from 'axios';
-import baseUrl from './baseUrl';
+
+const baseUrl = 'http://localhost:5000/books';
 
 const createBook = (book) => axios.post(baseUrl, book);
 
 const getBooks = () => axios.get(baseUrl);
 
-const showBook = (id) => axios.get(`${baseUrl}/${id}`);
-
-const updateBook = (id, book) => axios.patch(`${baseUrl}/${id}`);
+const updateBook = (id, book) => axios.patch(`${baseUrl}/${id}`, book);
 
 const deleteBook = (id) => axios.delete(`${baseUrl}/${id}`);
 
-export { createBook, getBooks, showBook, updateBook, deleteBook };
+export { createBook, getBooks, updateBook, deleteBook };
