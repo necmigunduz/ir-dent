@@ -23,6 +23,7 @@ function Books({ name, publisher, category, price }) {
       {allBooks.map((book)=>{
           return(
             <Book
+              key={book._id}
               name={book.name}
               bookId={book._id}
               publisher={book.publisher}
