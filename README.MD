@@ -1,5 +1,5 @@
-# Book List
-This project is developed as the takehome project. It is a basic library application. This project has two sides: 'dent-api' and 'client'. 'dent-api' is the back-end Api where the information of books are stored. 'client' has a form enabling users to make new book entries and a books-display-screen.
+# Book List App
+This project is developed as a takehome project. It is a basic library application. This project has two sides: 'dent-api' and 'client'. 'dent-api' is the back-end Api where the information of books are stored. 'client' has a form enabling users to make new book entries and a books-display-screen.
 
 ![screenshot](https://github.com/necmigunduz/ir-dent/blob/master/screenShot.png)
 
