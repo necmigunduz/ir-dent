@@ -4,7 +4,7 @@ import Book from "./Book";
 import fetchBooks from "../../api/fetchBooks";
 
 
-function Books({ name, publisher, category, price }) {
+function Books() {
   // const books = useSelector(state => state.books);
   const [allBooks, setAllBooks] = useState([]);
   
@@ -14,7 +14,7 @@ function Books({ name, publisher, category, price }) {
       setAllBooks(data.data);
     }
     getData()
-  }, []);
+  }, [allBooks]);
 
   console.log(allBooks)
   return (
