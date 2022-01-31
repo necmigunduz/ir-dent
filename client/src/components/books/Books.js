@@ -19,7 +19,7 @@ function Books() {
   console.log(allBooks)
   return (
     <>
-      <h2 className='mt-5'>Books Recorded</h2>
+      <h3 className='mt-5 border bg-dark text-white p-3 fw-bold'>Books Recorded</h3>
       <div className="mt-2">
       {allBooks.map((book)=>{
           return(

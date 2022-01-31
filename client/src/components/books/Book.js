@@ -20,7 +20,7 @@ function Book({ bookId, name, publisher, category, price }) {
           <Card.Text>Price: {price}</Card.Text>
           <Card.Footer>Record no: {bookId}</Card.Footer>
         </Card.Body>
-        <Button className='mt-2' onClick={() => handleDelete(bookId)}>Delete</Button>
+        <Button variant='danger' className='mt-2' onClick={() => handleDelete(bookId)}>Delete this book!</Button>
       </Card>
     </>
   );

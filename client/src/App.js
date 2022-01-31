@@ -12,7 +12,7 @@ function App() {
   }, [dispatch]);
   
   return (
-    <div style={{textAlign:'center', width:'50%', margin:'0 auto'}}>
+    <div style={{textAlign:'center', minWidth:'50%', margin:'0 auto'}}>
       <FormBook />
       <Books />
     </div>

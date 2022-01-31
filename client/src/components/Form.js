@@ -25,7 +25,7 @@ function FormBook(props) {
     }
     return (
         <>
-            <h1 className='mt-2'>Book Addition Form</h1>
+            <h1 className='mt-2 fw-bold'>Book Addition Form</h1>
             <Form  className='w-100 border p-5 bg-light' onSubmit={handleSubmit(onSubmit)}>
                 <Form.Group>
                     <Form.Label>Enter book name: </Form.Label>
@@ -67,6 +67,7 @@ function FormBook(props) {
                     />
                 </Form.Group>
                 <Button className='mt-2 w-100' type='submit'>Add Book</Button>
+                <span><small>All entries are required to record a new book!</small></span>
             </Form>
         </>
     )
