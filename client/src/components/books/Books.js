@@ -20,7 +20,7 @@ function Books() {
   return (
     <>
       <h3 className='mt-5 border bg-dark text-white p-3 fw-bold'>Books Recorded</h3>
-      <div className="mt-2">
+      <div className="mt-2 d-flex">
       {allBooks.map((book)=>{
           return(
             <Book

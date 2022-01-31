@@ -11,7 +11,7 @@ function Book({ bookId, name, publisher, category, price }) {
 
   return (  
     <>
-      <Card className="mt-2">
+      <Card className="mt-2 w-25">
         <Card.Body>
           <Card.Header>Book Card</Card.Header>
           <Card.Title><strong>Book Name:</strong> {name.charAt(0).toUpperCase() + name.slice(1)}</Card.Title>
