@@ -17,20 +17,21 @@ This project is developed as a takehome project. It is a basic library applicati
 - Redux.
 
 ## Getting Started
-* Prepare back-end for operation:
+### Prepare back-end for operation:
 - `git clone git@github.com:necmigunduz/ir-dent.git`,
 - `cd ir-dent/dent-api`,
 - `npm install`.
 
-* To run the back-end application:
-
+### To run the back-end application:
 - `service mongod start`,
 - `npm start`.
 
-* Prepare front-end for operation: 
+### Prepare front-end for operation: 
 - Open a new terminal (You can open a new terminal by pressing 'ctr + alt + t' on ubuntu),
 - `cd ir-dent/client`,
 - `npm install`,
+
+### To run the front-end application:
 - `npm start`.
 
 ## Usage
