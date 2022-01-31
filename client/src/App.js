@@ -4,7 +4,6 @@ import TopNav from './components/topNav';
 import { useDispatch } from 'react-redux';
 import { getBooks } from './_actions/books';
 import Books from './components/books/Books';
-import './assets/app.css';
 
 function App() {
   const dispatch = useDispatch();
