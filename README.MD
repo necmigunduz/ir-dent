@@ -3,14 +3,14 @@ This project is developed as a takehome project. It is a basic library applicati
 
 ![screenshot](https://github.com/necmigunduz/ir-dent/blob/master/screenShot.png)
 
-## dent-api is Built With
+## 'dent-api' is Built With
 
 - NodeJS,
 - ExpressJS,
 - MongoDB,
 - Nodemon.
 
-## client is Built With
+## 'client' is Built With
 
 - React,
 - React-Bootstrap,
