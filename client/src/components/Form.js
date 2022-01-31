@@ -3,8 +3,10 @@ import { useForm } from 'react-hook-form';
 import { bookCategories } from './categoryFilter';
 import { createBook } from '../_actions/books';
 import { useDispatch } from 'react-redux';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
-function Form(props) {
+function FormBook(props) {
     const { filter, changeFilter } = props;
     const { register, handleSubmit,reset } = useForm();
     const select = bookCategories.map((bookCategory) => 
@@ -23,25 +25,29 @@ function Form(props) {
     }
     return (
         <>
-            <form  onSubmit={handleSubmit(onSubmit)}>
-                <div>
-                    <input
+            <h1 className='mt-2'>Book Addition Form</h1>
+            <Form  className='w-100 border p-5 bg-light' onSubmit={handleSubmit(onSubmit)}>
+                <Form.Group>
+                    <Form.Label>Enter book name: </Form.Label>
+                    <Form.Control
                         type='text'
                         name='name'
                         placeholder='Book Name'
                         {...register('name', {required: true})}
                     />
-                </div>
-                <div>
-                    <input
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label>Enter book publisher: </Form.Label>
+                    <Form.Control
                         type='text'
                         name='publisher'
                         placeholder='Book Publisher'
                         {...register('publisher', {required: true})}
                     />
-                </div>
-                <div>
-                    <select 
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label>Select book category: </Form.Label>
+                    <Form.Select 
                         className='select' 
                         name='category'
                         onChange={(e) => handleFilterChange(e)} 
@@ -49,20 +55,21 @@ function Form(props) {
                         {...register('category', {required: true})}
                     >
                         {select}
-                    </select>
-                </div>
-                <div>
-                    <input
+                    </Form.Select>
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label>Enter price: </Form.Label>
+                    <Form.Control
                         type='number'
                         name='price'
                         placeholder='Book Price'
                         {...register('price', {required: true})}
                     />
-                </div>
-                <button type='submit'>Add Book</button>
-            </form>
+                </Form.Group>
+                <Button className='mt-2 w-100' type='submit'>Add Book</Button>
+            </Form>
         </>
     )
 }
 
-export default Form;
+export default FormBook;

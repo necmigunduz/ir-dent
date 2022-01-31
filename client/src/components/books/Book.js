@@ -1,5 +1,7 @@
 import axios from "axios";
 import React from "react";
+import Button from 'react-bootstrap/Button'
+import Card from 'react-bootstrap/Card'
 
 function Book({ bookId, name, publisher, category, price }) {
   
@@ -9,14 +11,17 @@ function Book({ bookId, name, publisher, category, price }) {
 
   return (  
     <>
-      <div>
-          <h3>Book name: {name}</h3>
-          <p>Record no: {bookId}</p>
-          <p>Publisher: {publisher}</p>
-          <p>Category: {category}</p>
-          <p>Price: {price}</p>
-          <button onClick={() => handleDelete(bookId)}>Delete</button>
-      </div>
+      <Card className="mt-2">
+        <Card.Body>
+          <Card.Header>Book Card</Card.Header>
+          <Card.Title><strong>Book Name:</strong> {name.charAt(0).toUpperCase() + name.slice(1)}</Card.Title>
+          <Card.Text>Publisher: {publisher}</Card.Text>
+          <Card.Text>Category: {category}</Card.Text>
+          <Card.Text>Price: {price}</Card.Text>
+          <Card.Footer>Record no: {bookId}</Card.Footer>
+        </Card.Body>
+        <Button className='mt-2' onClick={() => handleDelete(bookId)}>Delete</Button>
+      </Card>
     </>
   );
 }
