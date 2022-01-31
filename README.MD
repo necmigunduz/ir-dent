@@ -1,24 +1,39 @@
-# Book lis
+# Book List
+This project is developed as the takehome project. It is a basic library application. This project has two sides: 'dent-api' and 'client'. 'dent-api' is the back-end Api where the information of books are stored. 'client' has a form enabling users to make new book entries and a books-display-screen.
 
-Hospital Search is build with React Native. This app enables users to search for patient(s) from a Hospital API. User can use four different filters to make a search (fullname, given name, family name, and national id).
+![screenshot](https://github.com/necmigunduz/ir-dent/blob/master/screenShot.png)
 
-![screenshot](https://github.com/necmigunduz/hospital-search/blob/master/screenshot.png)
+## dent-api is Built With
 
-## Built With
+- NodeJS,
+- ExpressJS,
+- MongoDB,
+- Nodemon.
 
-- React Native,
-- Expo Cli,
-- NPM,
-- React Native Paper,
-- React Native Picker Select.
+## client is Built With
 
+- React,
+- React-Bootstrap,
+- Redux.
 
 ## Getting Started
+* Prepare back-end for operation:
+- `git clone git@github.com:necmigunduz/ir-dent.git`,
+- `cd ir-dent/dent-api`,
+- `npm install`.
 
-- `git clone git@github.com:necmigunduz/hospital-search.git`,
-- `cd hospital-search`,
-- `expo install`,
-- `expo start`.
+* To run the back-end application:
+
+- `service mongod start`,
+- `npm start`.
+
+* Prepare front-end for operation: (Open a new terminal)
+- `cd ir-dent/client`,
+- `npm install`,
+- `npm start`.
+
+## Usage
+- When the application is active, a form and books recorded in the app will be displayed on the screen. To make a new book entry, a user is required to fill all input fields and select a category. Otherwise, recording process will end up with a failure. The front-end uses `http://localhost:3000` and the back-end uses `http://localhost:5000`. To view the recorded books in the back-end, a user needs to visit `http://localhost:5000/books`.
 
 ## Author
 
