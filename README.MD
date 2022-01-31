@@ -27,7 +27,8 @@ This project is developed as a takehome project. It is a basic library applicati
 - `service mongod start`,
 - `npm start`.
 
-* Prepare front-end for operation: (Open a new terminal)
+* Prepare front-end for operation: 
+- Open a new terminal (You can open a new terminal by pressing 'ctr + alt + t' on ubuntu),
 - `cd ir-dent/client`,
 - `npm install`,
 - `npm start`.
